@@ -32,7 +32,7 @@ body {
 /* ── Grid ── */
 .bento {
   display: grid;
-  grid-template-columns: 170px 280px 1fr 170px;
+  grid-template-columns: 170px 320px 1fr 170px;
   grid-template-rows: auto auto auto auto auto;
   gap: 12px;
   width: 100%;
@@ -121,13 +121,12 @@ body {
 }
 .download-link:hover { opacity: 1; color: var(--accent); }
 .typo-giant {
-  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-size: clamp(2rem, 4vw, 3.5rem);
   font-weight: 700;
   line-height: 1;
   letter-spacing: -0.03em;
   margin-top: 16px;
-  word-break: break-word;
-  overflow-wrap: break-word;
+  white-space: nowrap;
 }
 .typo-ar .typo-giant { font-family: 'Thmanyah', sans-serif; letter-spacing: 0; }
 .typo-ar .typo-meta > span:first-child { font-family: 'Thmanyah', sans-serif; }
@@ -300,6 +299,6 @@ body {
   }
   [data-pos] { grid-column: auto !important; grid-row: auto !important; }
   .logo-wide { grid-column: 1 / span 2 !important; }
-  .typo-giant { font-size: clamp(2rem, 8vw, 3rem); }
+  .typo-giant { font-size: clamp(1.8rem, 7vw, 2.5rem); }
   .typo-card { padding: 16px 18px; }
 }
